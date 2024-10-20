@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Particle Rose Effect</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div style="text-align: center; margin-bottom: 20px;">
+        <select id="relationship">
+            <option value="">Chọn mối quan hệ</option>
+            <option value="Bà Ngoan">Bà Ngoan</option>
+            <option value="Bà Thảnh">Bà Thảnh</option>
+            <option value="Mẹ Mây">Mẹ Mây</option>
+            <option value="Cô Thủy">Cô Thủy</option>
+            <option value="Thím Cúc">Thím Cúc</option>
+            <option value="Cô Liên">Cô Liên</option>
+            <option value="Chị Dung">Chị Dung</option>
+            <option value="Em Bống">Em Bống</option>
+            <option value="Em Hằng">Em Hằng</option>
+            <option value="Em Giang">Em Giang</option>
+            <option value="Em Thùy">Em Thùy</option>
+        </select>
+        <button id="submitBtn">Gửi</button>
+    </div>
+    <div class="flower__wrapper">
+        <div class="flower__sparkles">
+          <div class="flower__sparkle"></div>
+          <div class="flower__sparkle"></div>
+          <div class="flower__sparkle"></div>
+          <div class="flower__sparkle"></div>
+          <div class="flower__sparkle"></div>
+          <div class="flower__sparkle"></div>
+          <div class="flower__sparkle"></div>
+          <div class="flower__sparkle"></div>
+        </div>
+        <div class="flower">
+          <div class="flower__steam-wrapper">
+            <div class="flower__leaf flower__leaf--first"></div>
+            <div class="flower__leaf flower__leaf--second"></div>
+            <div class="flower__steam">
+              <div class="flower__steam-end"></div>
+            </div>
+          </div>
+          <div class="flower__head flower__head--main">
+            <div class="flower__petal flower__petal--back flower__petal--left flower__petal--back-left"></div>
+            <div class="flower__petal flower__petal--back flower__petal--right flower__petal--back-right"></div>
+            <div class="flower__petal flower__petal--front flower__petal--left flower__petal--front-left"></div>
+            <div class="flower__petal flower__petal--front flower__petal--right flower__petal--front-right"></div>
+            <div class="flower__center">
+              <div class="flower__seeds">
+                <div class="flower__seed"></div>
+                <div class="flower__seed"></div>
+                <div class="flower__seed"></div>
+                <div class="flower__seed"></div>
+                <div class="flower__seed"></div>
+                <div class="flower__seed"></div>
+                <div class="flower__seed"></div>
+                <div class="flower__seed"></div>
+                <div class="flower__seed"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="greetingMessage"></p>
+        </div>
+    </div>
+      
+    <script src="script.js"></script>
+  </body>
+</html>
